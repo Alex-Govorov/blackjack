@@ -1,8 +1,6 @@
 class BlackJack
   attr_reader :player, :dealer, :game_account, :open, :winner
 
-  MENU_METHODS = { 1 => :pass, 2 => :add_card, 3 => :open_cards }.freeze
-
   def initialize(player_name)
     @player = Player.new(player_name)
     @dealer = Dealer.new('Дилер')
